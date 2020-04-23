@@ -74,6 +74,6 @@
 	}
 
 	echo $setting->build_css(
-		'.wp-block-image',
+		is_admin() ? '.editor-styles-wrapper .wp-block-image' : '.sv100_sv_content_wrapper article .wp-block-image',
 		$properties
 	);
