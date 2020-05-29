@@ -13,7 +13,8 @@
 	line-height: 2;
 }
 /* Gutenberg FIX - make frontend style available in editor, too */
-.wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
+/*@todo please test this line, I guess 0 values don't make sense*/
+.wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
 	display: table;
 	margin-left: 0;
 	margin-right: 0;
