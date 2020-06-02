@@ -1,6 +1,7 @@
 .wp-block-image{
 	line-height:0;
 	margin-bottom:0; /* overwrite Gutenberg default style */
+	text-align:center;
 }
 .wp-block-image.is-style-cover img{
 	object-fit:cover;
