@@ -15,7 +15,7 @@ body .wp-block-image{
 }
 /* Gutenberg FIX - make frontend style available in editor, too */
 /*@todo please test this line, I guess 0 values don't make sense*/
-.wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized {
+article .wp-block-image .alignleft, article .wp-block-image .alignright, article .wp-block-image.is-resized {
 	display: table;
 	margin-left: 0;
 	margin-right: 0;
