@@ -9,9 +9,13 @@ body .wp-block-image{
 	height:300px;
 }
 /* @todo: make this a setting */
-.wp-block-image figcaption{
+article .wp-block-image figcaption{
 	padding: 20px;
 	line-height: 2;
+}
+/* Gutenberg Fix - override default display:table-caption; */
+.wp-block-image .aligncenter>figcaption, .wp-block-image .alignleft>figcaption, .wp-block-image .alignright>figcaption, .wp-block-image.is-resized>figcaption{
+	display:block;
 }
 /* Gutenberg FIX - make frontend style available in editor, too */
 /*@todo please test this line, I guess 0 values don't make sense*/
