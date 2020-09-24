@@ -19,10 +19,10 @@ article .wp-block-image figcaption{
 }
 /* Gutenberg FIX - make frontend style available in editor, too */
 /*@todo please test this line, I guess 0 values don't make sense*/
-article .wp-block-image .alignleft, article .wp-block-image .alignright, article .wp-block-image.is-resized {
+/*article .wp-block-image .alignleft, article .wp-block-image .alignright, article .wp-block-image.is-resized {
 	margin-left: 0;
 	margin-right: 0;
-}
+}*/
 article .wp-block-image .aligncenter, article .wp-block-image .alignleft, article .wp-block-image .alignright, article .wp-block-image.is-resized{
 	display: block;
 }
