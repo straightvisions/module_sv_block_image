@@ -9,7 +9,7 @@ body .wp-block-image{
 	height:300px;
 }
 /* @todo: make this a setting */
-article .wp-block-image figcaption{
+.wp-block-image figcaption{
 	padding: 20px;
 	line-height: 2;
 }
