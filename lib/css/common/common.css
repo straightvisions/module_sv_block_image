@@ -13,16 +13,3 @@ body .wp-block-image{
 	padding: 20px;
 	line-height: 2;
 }
-/* Gutenberg Fix - override default display:table-caption; */
-.wp-block-image .aligncenter>figcaption, .wp-block-image .alignleft>figcaption, .wp-block-image .alignright>figcaption, .wp-block-image.is-resized>figcaption{
-	display:block;
-}
-/* Gutenberg FIX - make frontend style available in editor, too */
-/*@todo please test this line, I guess 0 values don't make sense*/
-/*article .wp-block-image .alignleft, article .wp-block-image .alignright, article .wp-block-image.is-resized {
-	margin-left: 0;
-	margin-right: 0;
-}*/
-article .wp-block-image .aligncenter, article .wp-block-image .alignleft, article .wp-block-image .alignright, article .wp-block-image.is-resized{
-	display: block;
-}
