@@ -3,6 +3,9 @@ body .wp-block-image{
 	margin-bottom:0; /* overwrite Gutenberg default style */
 	text-align:center;
 }
+.wp-block-image img{
+	height:auto;
+}
 .wp-block-image.is-style-cover img{
 	object-fit:cover;
 	width: 100%;
