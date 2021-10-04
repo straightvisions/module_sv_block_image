@@ -3,7 +3,7 @@ body .wp-block-image{
 	margin-bottom:0; /* overwrite Gutenberg default style */
 	text-align:center;
 }
-.wp-block-image img{
+.wp-block-image:not(.is-style-circle-mask):not(.wp-block-image.is-style-rounded) img{
 	height:auto;
 }
 .wp-block-image.is-style-cover img{
@@ -15,4 +15,8 @@ body .wp-block-image{
 .wp-block-image figcaption{
 	padding: 20px;
 	line-height: 2;
+}
+
+.wp-block-image.is-style-circle-mask img, .wp-block-image.is-style-rounded img{
+	object-fit: cover;
 }
