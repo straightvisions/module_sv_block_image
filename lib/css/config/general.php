@@ -1,6 +1,6 @@
 <?php
 	echo $_s->build_css(
-		is_admin() ? '.editor-styles-wrapper .wp-block-image' : '.sv100_sv_content_wrapper article .wp-block-image',
+		is_admin() ? '.editor-styles-wrapper .wp-block-image' : '.wp-block-image',
 		array_merge(
 			$module->get_setting('padding')->get_css_data('padding'),
 			$module->get_setting('margin')->get_css_data(),
