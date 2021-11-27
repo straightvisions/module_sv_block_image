@@ -1,6 +1,5 @@
 body .wp-block-image{
 	line-height:0;
-	margin-bottom:0; /* overwrite Gutenberg default style */
 	text-align:center;
 }
 .wp-block-image:not(.is-style-circle-mask):not(.wp-block-image.is-style-rounded) img{
