@@ -2,8 +2,18 @@ body .wp-block-image{
 	line-height:0;
 	text-align:center;
 }
-.wp-block-image:not(.is-style-circle-mask):not(.wp-block-image.is-style-rounded) img{
+body .wp-block-image img{
+	object-fit: contain;
+}
+.wp-block-image figure:not(.is-style-circle-mask):not(.wp-block-image.is-style-rounded):not(.is-resized) img{
 	height:auto;
+}
+
+button a img{
+	height:fit-content;
+	width: auto;
+	vertical-align: text-bottom;
+	max-width:100%;
 }
 .wp-block-image.is-style-cover img{
 	object-fit:cover;
