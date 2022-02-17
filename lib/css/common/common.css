@@ -20,12 +20,6 @@ button a img{
 	width: 100%;
 	height:300px;
 }
-/* @todo: make this a setting */
-.wp-block-image figcaption{
-	padding: 20px;
-	line-height: 2;
-}
-
 .wp-block-image.is-style-circle-mask img, .wp-block-image.is-style-rounded img{
 	object-fit: cover;
 }
