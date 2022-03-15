@@ -14,7 +14,16 @@
 				->get_root()
 				->add_section( $this );
 		}
+		protected function register_scripts(): sv_block_image {
+			parent::register_scripts();
 
+			// Register Styles
+			$this->get_script( 'style_no_margin' )
+				->set_is_gutenberg()
+				->set_path( 'lib/css/common/style_no_margin.css' );
+
+			return $this;
+		}
 		protected function load_settings(): sv_block_image {
 			$this->get_setting( 'margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
