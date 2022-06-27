@@ -4,6 +4,7 @@ body .wp-block-image, .wp-post-image{
 	overflow:hidden;
 	max-width: 100%;
 	border-radius: inherit;
+	margin:0;
 }
 body .wp-block-image img, .wp-post-image img{
 	object-fit: contain;
