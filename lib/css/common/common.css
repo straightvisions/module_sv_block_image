@@ -19,7 +19,11 @@ body .wp-block-image img, .wp-post-image img{
 .wp-block-image figure:not(.is-style-circle-mask):not(.wp-block-image.is-style-rounded):not(.is-resized) img{
 	height:auto;
 }
-
+/* @todo: make this a setting */
+.wp-block-image figcaption{
+	text-align:center;
+	font-style: italic;
+}
 button a img{
 	height:fit-content;
 	width: auto;
