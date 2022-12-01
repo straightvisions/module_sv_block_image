@@ -9,6 +9,7 @@ body .wp-block-image img, .wp-post-image img{
 	object-fit: contain;
 	object-position:center;
 	max-width:100%;
+	min-height:1px;
 }
 .wp-block-image picture, picture.wp-post-image{
 	display:block;
