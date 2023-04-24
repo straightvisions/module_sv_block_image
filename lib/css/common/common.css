@@ -3,7 +3,6 @@ body .wp-block-image, .wp-post-image{
 	text-align:center;
 	overflow:hidden;
 	border-radius: inherit;
-	margin:0;
 }
 body .wp-block-image img, .wp-post-image img{
 	object-fit: contain;
