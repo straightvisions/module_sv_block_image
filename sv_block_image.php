@@ -1,6 +1,5 @@
 <?php
 	namespace sv100;
-
 	class sv_block_image extends init {
 		public function init() {
 			$this->set_module_title( __( 'Block: Image', 'sv100' ) )
@@ -75,6 +74,17 @@
 				->set_title( __( 'Padding', 'sv100' ) )
 				->set_is_responsive(true)
 				->load_type( 'margin' );
+
+			return $this;
+		}
+		protected function register_scripts(): sv_block_image {
+			parent::register_scripts();
+
+			// Register Styles
+			$this->get_script( 'cover' )
+				->set_is_gutenberg()
+				->set_block_style(__('Cover', 'sv100'))
+				->set_path( 'lib/css/styles/cover.css' );
 
 			return $this;
 		}
