@@ -35,10 +35,6 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-.wp-block-image figcaption {
-	margin-top: 0.5em;
-	margin-bottom: 1em;
-}
 .wp-block-image.is-style-rounded img {
 	border-radius: 9999px;
 }
