@@ -9,16 +9,11 @@ body .wp-block-image img, .wp-post-image img{
 	object-position:center;
 	max-width:100%;
 	min-height:1px;
-}
-.wp-block-image picture, picture.wp-post-image{
-	display:block;
-	width:100%;
-	height:100%;
+	height:auto;
 }
 .wp-block-image figure:not(.is-style-circle-mask):not(.wp-block-image.is-style-rounded):not(.is-resized) img{
 	height:auto;
 }
-/* @todo: make this a setting */
 .wp-block-image figcaption{
 	text-align:center;
 	font-style: italic;
@@ -37,3 +32,24 @@ button a img{
 .wp-block-image.is-style-circle-mask img, .wp-block-image.is-style-rounded img{
 	object-fit: contain;
 }
+/* rounded images can't be fit contain */
+.wp-block-image.is-style-rounded > img[style*="object-fit:contain"]{
+	object-fit:cover !important;
+}
+/* imagify support */
+.wp-block-image > picture{
+	display:block;
+	overflow:hidden;
+}
+.wp-block-image > picture > img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+.wp-block-image > picture[style*="object-fit:contain"] > img{
+	object-fit:contain;
+}
+.wp-block-image.is-style-rounded > picture > img{
+	object-fit:cover;
+}
+/* imagify support */
