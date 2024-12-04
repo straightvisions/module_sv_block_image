@@ -1,6 +1,6 @@
 <?php
 	echo $_s->build_css(
-		'.wp-block-image figcaption',
+		'.wp-block-image .wp-element-caption',
 		array_merge(
 			$module->get_setting('figcaption_font')->get_css_data('font-family'),
 			$module->get_setting('figcaption_font_size')->get_css_data('font-size','','px'),
