@@ -1,3 +1,7 @@
+.wp-block-image{
+	overflow:hidden;
+}
+
 .wp-block-image.alignfull .wp-element-caption,
 .wp-block-image.alignleft .wp-element-caption,
 .wp-block-image.alignright .wp-element-caption{
